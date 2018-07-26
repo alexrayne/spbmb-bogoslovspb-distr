@@ -1,0 +1,13 @@
+
+Neos:
+  Flow:
+    i18n:
+      defaultLocale: ru
+  Neos:
+    userInterface:
+      defaultLanguage: ru
+      translation:
+        autoInclude:
+          SpbMB.BogoslovSpb:
+            - Main
+            - 'NodeTypes/*'

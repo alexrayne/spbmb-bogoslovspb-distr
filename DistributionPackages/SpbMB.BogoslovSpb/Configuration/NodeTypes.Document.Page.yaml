@@ -1,0 +1,7 @@
+'SpbMB.BogoslovSpb:Document.Page':
+  superTypes:
+    'SpbMB.BogoslovSpb:Document.AbstractPage': true
+  ui:
+    label: i18n
+    icon: icon-file-o
+    position: 100

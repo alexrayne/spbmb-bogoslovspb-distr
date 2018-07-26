@@ -1,0 +1,9 @@
+prototype(SpbMB.BogoslovSpb:Component.DefaultLayout) < prototype(Neos.Fusion:Component) {
+	content = ${value}
+
+	renderer = afx`
+		<SpbMB.BogoslovSpb:Component.Header />
+		{props.content}
+		<SpbMB.BogoslovSpb:Component.Footer />
+	`
+}

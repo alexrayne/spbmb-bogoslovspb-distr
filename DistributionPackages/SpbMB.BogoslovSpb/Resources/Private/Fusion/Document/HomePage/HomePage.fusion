@@ -1,0 +1,13 @@
+prototype(SpbMB.BogoslovSpb:Document.HomePage) < prototype(SpbMB.BogoslovSpb:Document.AbstractPage) {
+	body {
+		main = Neos.Neos:ContentCollection {
+			nodePath = 'main'
+		}
+
+		renderer = afx`
+			<main class="codeq-site-main">
+				{props.main}
+			</main>
+		`
+	}
+}

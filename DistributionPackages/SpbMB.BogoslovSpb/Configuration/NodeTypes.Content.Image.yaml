@@ -1,0 +1,8 @@
+'SpbMB.BogoslovSpb:Content.Image':
+  superTypes:
+    'Neos.Neos:Content': true
+    'SpbMB.BogoslovSpb:Mixin.Image': true
+  ui:
+    label: Image
+    icon: icon-picture
+    position: 300

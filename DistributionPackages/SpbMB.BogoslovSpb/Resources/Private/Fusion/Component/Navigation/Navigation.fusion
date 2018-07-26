@@ -1,0 +1,14 @@
+prototype(SpbMB.BogoslovSpb:Component.Navigation) < prototype(Neos.Fusion:Value) {
+	@context.node = ${site}
+	value = Neos.Fusion:Tag {
+		attributes.class = 'codeq-site-navigation'
+		content = SpbMB.BogoslovSpb:Component.Navigation.LevelRenderer
+	}
+	@cache {
+		mode = 'cached'
+		entryIdentifier.node = ${documentNode}
+		entryTags {
+			1 = 'NodeType_Neos.Neos:Document'
+		}
+	}
+}

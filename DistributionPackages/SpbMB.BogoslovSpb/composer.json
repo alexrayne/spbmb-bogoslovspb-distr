@@ -22,7 +22,8 @@
         "jonnitto/sitemap": "^3.1",
         "sitegeist/silhouettes" : "^1.0",
 
-        "neos/nodetypes-contentreferences": "*"
+        "neos/nodetypes-contentreferences": "*",
+        "psmb/nodetypes": "*"
     },
     "require-dev": {
         "ttree/eelshell": "@dev",

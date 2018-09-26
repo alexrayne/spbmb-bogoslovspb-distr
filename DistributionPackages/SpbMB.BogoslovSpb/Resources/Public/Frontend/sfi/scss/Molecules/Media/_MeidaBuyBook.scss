@@ -1,0 +1,17 @@
+.MeidaBuyBook-Image {
+	width: 115px;
+	border: $border-thick;
+	margin-right: 2*$u;
+}
+.MeidaBuyBook-Body {
+	margin-left: 115px + 2*$u;
+}
+.MeidaBuyBook-Title {
+	@extend .ServiceLight;
+	color: $color-primaryAlt;
+	margin: 0;
+}
+.MeidaBuyBook-Details {
+	@extend .ParagraphAlt--Small;
+	color: $gray--light;
+}

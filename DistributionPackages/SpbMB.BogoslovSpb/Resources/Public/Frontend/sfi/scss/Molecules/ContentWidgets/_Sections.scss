@@ -1,0 +1,191 @@
+.Sections{
+    margin: $spacingBetweenContentBlocks 0;
+}
+
+.Sections-Tabs {
+    overflow: auto;
+    margin-top: 2*$u;
+    padding: 0;
+}
+
+.Sections-Tab {
+    float: left;
+    margin: 0;
+    list-style: none;
+}
+
+.Sections-Panel {
+    display: none;
+}
+
+.Sections-Tabs {
+	display: none;
+}
+
+.Sections-Panel.isActive {
+    display: block;
+}
+
+/* Accordion responsive breakpoint */
+@include breakpoint('medium') {
+    .Sections-Tabs {
+        display: block;
+    }
+
+    .Sections-AccordionTitle {
+        display: none !important;
+    }
+}
+
+.Sections--Accordion {
+    .Sections-Tabs {
+        display: none !important;
+    }
+
+    .Sections-AccordionTitle {
+        display: block !important;
+    }
+}
+
+
+
+
+
+.Sections-Anchor {
+    @extend .ParagraphAlt--Large;
+    display: block;
+    color: $color-primaryAlt;
+    border: $border-thin--dark;
+    background-color: $gray-bg--light;
+    padding: $u 2*$u;
+    margin: 0;
+    &.isActive {
+        background-color: $color-primaryAlt;
+        color: white;
+    }
+}
+.Sections-Tabs .Sections-Anchor {
+    border-bottom: 0;
+    border-right-width: 0;
+}
+.Sections-Tabs .Sections-Tab:last-child .Sections-Anchor {
+    border-right-width: 1px;
+}
+.Sections-AccordionTitle {
+    margin-top: $u;
+    @extend .icon-right-dir;
+    &:before {
+        @include icon();
+    }
+    &.isActive {
+        @extend .icon-down-dir;
+    }
+}
+
+.Sections-Panel {
+    padding: 3*$u 2*$u;
+    border: $border-thin--dark;
+}
+
+
+
+
+
+
+
+
+.Sections--Pills{
+	.Sections-Anchor{
+		@extend .Service;
+		&:after{
+			content: ' »';
+            color: $color-primary;
+		}
+	}
+    .Sections-Anchor.isActive, .Sections-Anchor:hover{
+        color: $color-primary;
+    }
+    .Sections-Tabs{
+        margin-bottom: 3*$u;
+    }
+	.Sections-Tab{
+		padding: 0;
+		padding-right: 2*$u; 
+	}
+}
+
+
+
+
+
+
+
+
+.SectionWithImageTabAnchor{
+    padding-right: $u;
+    padding-bottom: $u;
+}
+
+.SectionWithImageTabAnchor-Image{
+    opacity: 0.8;
+}
+.SectionWithImageTabAnchor-Image:hover,.Sections-Anchor.isActive .SectionWithImageTabAnchor-Image{
+    opacity: 1;
+}
+
+.Sections-Anchor.isActive .SectionWithImageTabAnchor-Image{
+    position: relative;
+}
+.Sections-Anchor.isActive .SectionWithImageTabAnchor-Image:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 10px solid;
+}
+
+.SectionWithImageAccordionAnchor{
+    margin-bottom: $u;
+}
+.SectionWithImageAccordionAnchor-Title{
+    @extend .H6;
+    margin: 0 !important;
+    border-top: $border-thin;
+    padding-top: $u;
+}
+.SectionWithImageAccordionAnchor-SubTitle{
+    @extend .ParagraphAlt--Small;
+    margin-top: $u/2;
+}
+
+
+@include breakpoint(small only) {
+    .SectionWithImagePanel .TextWithImage-Headline{
+        display: none;
+    }
+}
+
+
+
+.SectionWithImageTabAnchor-Title{
+    @extend .Service;
+}
+
+
+@include breakpoint('medium') {
+    .SectionWithImageTabAnchor--Variant1{
+        width: 120px !important;
+    }
+    .SectionWithImageTabAnchor--Variant2{
+        width: 120px !important;
+    }
+}
+@include breakpoint('large') {
+    .SectionWithImageTabAnchor--Variant1{
+        width: 120px !important;
+    }
+    .SectionWithImageTabAnchor--Variant2{
+        width: 190px !important;
+    }
+}

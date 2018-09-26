@@ -1,0 +1,16 @@
+@media #{$medium-up} {
+	.Cover {
+		height: 400px;
+		min-height: 300px;
+		background-size: cover;
+		background-position-y: 40%;
+		background-position-x: 50%;
+		overflow: hidden;
+	}
+
+	.Carousel--Cover {
+		height: 400px;
+		min-height: 300px;
+		margin-bottom: 0;
+	}
+}

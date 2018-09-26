@@ -1,0 +1,38 @@
+.SearchBox {
+  margin: $u/2 0;
+  overflow: hidden;
+  max-width: 180px;
+}
+
+
+.SearchBox-Field {
+  @extend .ParagraphAlt;
+  border: $border-thin;
+  color: $gray--light;
+  padding-left: 6px;
+  margin: 0;
+  width: 100%;
+}
+
+
+.SearchBox-Submit {
+  position: relative;
+  input {
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    width: 2*$u;
+    height: 2*$u;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+  }
+
+  &:before {
+    color: $gray--light;
+    position: absolute;
+    left: 2px;
+    top: 4px;
+  }
+}

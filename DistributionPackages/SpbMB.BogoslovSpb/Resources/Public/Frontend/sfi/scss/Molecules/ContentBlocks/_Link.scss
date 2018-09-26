@@ -1,0 +1,31 @@
+.ImageLink{
+	display: inline-block;
+	width: 300px;
+	height: 250px;
+	background-repeat: no-repeat; 
+	padding-top: 3*$u;
+	margin-right: 2*$u;
+
+	font-family: $fontFamily-alt;
+	font-size: rem-calc(36);
+	color: white;
+	text-align: center;
+}
+
+
+.ButtonLink{
+	@extend .Button;
+}
+
+.InlineLink{
+	@extend .Link;
+	font-family: $fontFamily-alt;
+	&:after{
+		content: ' »';
+		display: inline-block;
+		position: relative;
+		left: $u/4;
+		width: 7px;
+		margin-right: -7px;
+	}
+}

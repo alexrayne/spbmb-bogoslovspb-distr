@@ -1,0 +1,54 @@
+$gray--dark: #222;
+$gray--light: #828282;
+$gray-bg: #dadada;
+$gray-bg--light: #f7f7f7;
+$gray-line: #ccc;
+
+$brown: #6e584f;
+$orange: #ff7800;
+
+$red: #ba3925;
+$blue: #2455c3;
+$acid-blue: #00b0f0;
+
+$color-sfi: $brown;
+$color-primary: $acid-blue;
+$color-primaryAlt: $acid-blue;
+
+
+.color-brown {
+    color: $brown !important;
+}
+.color-white {
+	color: white !important;
+}
+.color-primary {
+	color: $color-primary !important;
+}
+.color-primaryAlt {
+	color: $color-primaryAlt !important;
+}
+.color-grayAlt {
+	color: $gray--light !important;
+}
+
+.backgroundColor-primary {
+	background-color: $color-primary !important;
+}
+.backgroundColor-primaryAlt {
+	background-color: $color-primaryAlt !important;
+}
+
+.backgroundColor-white {
+	background-color: white !important;
+}
+.borderColor-white {
+	border-color: white !important;
+}
+
+.backgroundColor-gray {
+	background-color: $gray-bg !important;
+}
+.borderColor-gray {
+	border-color: $gray-bg !important;
+}

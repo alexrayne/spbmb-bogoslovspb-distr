@@ -1,0 +1,24 @@
+.SectionMenu-Item {
+	@extend .ParagraphAlt--Large;
+	color: $color-primary;
+	margin: 0 !important;
+	border-bottom: $border-dotted;
+	transition: $transition;
+	a {
+		display: block;
+		padding: 2/3*$u;
+		padding-right: 2*$u;
+	}
+	a:after {
+		content: '»';
+		display: inline-block;
+		position: relative;
+		left: $u/4;
+		width: 7px;
+		margin-right: -7px;
+	}
+	&:first-child {
+		border-top: $border-dotted;
+	}
+	@include link-state();
+}

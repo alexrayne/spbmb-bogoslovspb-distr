@@ -1,0 +1,34 @@
+.Media {
+	margin-bottom: 30px;
+	transition: $transition;
+	&:hover {
+		background: white;
+		.Media-Title {
+			color: $color-primary;
+			text-decoration: underline;
+		}
+	}
+}
+.Media-Title {
+	@extend .Paragraph--Large;
+	line-height: $lineHeight-tight;
+	margin-top: 1.5*$u;
+	border-bottom: 1px solid $gray-line;
+	padding-bottom: $u/4;
+	margin-bottom: $u/4;
+}
+.Media-Teaser {
+	@extend .ParagraphAlt;
+}
+.Media-Date {
+	@extend .ParagraphAlt;
+	text-transform: lowercase;
+	color: $gray--light;
+	margin-bottom: $u/2;
+}
+.Media-Category {
+	display: none;
+}
+.Media-Image img {
+	width: 100%;
+}

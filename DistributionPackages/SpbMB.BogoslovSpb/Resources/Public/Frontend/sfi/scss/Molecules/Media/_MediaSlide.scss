@@ -1,0 +1,79 @@
+.MediaSlideMedium {
+	margin-top: 0 !important;
+	position: relative;
+	@include breakpoint('medium') {
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			content: '';
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 70%);
+		}
+	}
+}
+.MediaSlideMedium-Wrap {
+	@include breakpoint('medium') {
+		position: absolute;
+		left: 50%;
+		bottom: 10%;
+		max-width: 960px;
+		padding: 0 !important;
+		z-index: 1;
+	}
+	&:hover {
+		.MediaSlideMedium-Title {
+			text-decoration: underline !important;
+		}
+	}
+}
+.MediaSlideMedium-Title {
+	@extend .H1;
+	color: white;
+	line-height: $lineHeight-single;
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.75);
+	margin-bottom: $u;
+}
+.MediaSlideMedium-Teaser {
+	@extend .Paragraph--Large;
+	color: white;
+	line-height: $lineHeight-tight;
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.75);
+	margin-top: $u/2;
+}
+.MediaSlideMedium-Body {
+	position: relative;
+	text-align: center;
+	left: -50%;
+	margin: 1.5*$u 2*$u;
+}
+
+
+.MediaSlideSmall-Body {
+	transition: $transition;
+	padding: $u 2*$u 2.5*$u 2*$u;
+	background-color: black;
+}
+.MediaSlideSmall-Title {
+	@extend .Paragraph--Large;
+	color: white;
+	line-height: $lineHeight-tight;
+	margin-top: $u;
+}
+.MediaSlideSmall-Teaser {
+	@extend .ParagraphAlt;
+	color: white;
+}
+.MediaSlideSmall-Date {
+	@extend .ParagraphAlt;
+	text-transform: lowercase;
+	color: white;
+	margin-bottom: $u/2;
+}
+.MediaSlideSmall-Category {
+	display: none;
+}
+.MediaSlideSmall-Image img {
+	width: 100%;
+}

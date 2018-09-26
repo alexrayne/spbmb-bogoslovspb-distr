@@ -1,0 +1,29 @@
+ .OrderedList {
+	list-style-type: decimal;
+	padding-left: 3*$u;
+	list-style-position: outside;
+ }
+
+ .UnorderedList {
+	list-style-type: disc;
+	padding-left: 3*$u;
+	list-style-position: outside;
+ }
+ 
+.List-Disc {
+    ul {
+        list-style-type: disc;
+    }
+}
+ 
+.List-Circ {
+    ul {
+        list-style-type: circle;
+    }
+}
+ 
+.List-Sqr {
+    ul {
+        list-style-type: square;
+    }
+}

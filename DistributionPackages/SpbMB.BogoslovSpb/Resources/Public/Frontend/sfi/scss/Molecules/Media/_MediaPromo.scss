@@ -1,0 +1,25 @@
+.MediaPromo {
+	text-align: center;
+	padding: 2*$u;
+	margin-bottom: 2*$u;
+	border: $border-thin;
+	background: $gray-bg--light;
+	transition: $transition;
+	&:hover {
+		background: white;
+		.MediaPromo-Title {
+			color: $color-primary;
+			text-decoration: underline;
+		}
+	}
+}
+
+.MediaPromo-Title{
+	@extend .ServiceLight--Small;
+	margin: $u 0;
+	color: $color-primaryAlt;
+}
+.MediaPromo-Teaser{
+	@extend .ParagraphAlt--Small;
+	color: $gray--light;
+}

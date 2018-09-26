@@ -6,9 +6,34 @@ prototype(SpbMB.BogoslovSpb:Document.AbstractPage) < prototype(Neos.Neos:Page) {
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			`
 		}
+		
+		stylesheets.app = SpbMB.BogoslovSpb:Document.TagCSS {
+			csspath = 'resource://SpbMB.BogoslovSpb/Public/Frontend/sfi/built/app.css'
+		}
+		stylesheets.accessible = SpbMB.BogoslovSpb:Document.TagCSS {
+			csspath = 'resource://SpbMB.BogoslovSpb/Public/Frontend/sfi/built/accessible.css'
+		}
 	}
+
 	body = Neos.Fusion:Component {
-		@process.layout = SpbMB.BogoslovSpb:Component.DefaultLayout
+		@process.layout = SpbMB.BogoslovSpb:Component.DefaultLayout {
+			mainMenu = Neos.Fusion:Template {
+				templatePath = 'resource://SpbMB.BogoslovSpb/Private/Partials/SiteNavigation.html'
+				partialRootPath = 'resource://SpbMB.BogoslovSpb/Private/Partials'
+				mainMenu = Neos.Neos:Menu{
+					entryLevel = 1
+					maximumLevels = 1
+					attributes.class = "nav"
+				}
+			}
+			sfiMenu = Neos.Neos:Menu {
+				templatePath = 'resource://SpbMB.BogoslovSpb/Private/Templates/TypoScriptObjects/MainMenu.html'
+				partialRootPath = 'resource://SpbMB.BogoslovSpb/Private/Partials'
+				entryLevel = 1
+				maximumLevels = 2
+			}
+			
+		}
 		@process.normalize = CodeQ.UnicodeNormalizer:Normalizer
 	}
 }

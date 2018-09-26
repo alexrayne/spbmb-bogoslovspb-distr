@@ -1,0 +1,35 @@
+.Paragraph {
+	font-size: rem-calc(14);
+	@include breakpoint('medium') {
+		font-size: rem-calc(18);
+	}
+	line-height: $lineHeight-normal;
+}
+.Paragraph--Large {
+	@extend .Paragraph;
+	font-size: rem-calc(18);
+	@include breakpoint('medium') {
+		font-size: rem-calc(24);
+	}
+}
+.Paragraph--Small {
+	@extend .Paragraph;
+	font-size: rem-calc(12);
+	@include breakpoint('medium') {
+		font-size: rem-calc(14);
+	}
+}
+
+.ParagraphAlt {
+	font-family: $fontFamily-alt;
+	font-size: rem-calc(14);
+	line-height: $lineHeight-normal;
+}
+.ParagraphAlt--Small {
+	@extend .ParagraphAlt;
+	font-size: rem-calc(12);
+}
+.ParagraphAlt--Large {
+	@extend .ParagraphAlt;
+	font-size: rem-calc(18);
+}

@@ -1,0 +1,47 @@
+
+%mainHeadings {
+	font-family: $fontFamily-alt;
+	font-weight: bold;
+	line-height: $lineHeight-single;
+	@include breakpoint('medium') {
+		line-height: $lineHeight-tight;
+	}
+}
+// Not used yet, consider deprication
+.H0 {
+	@extend %mainHeadings;
+	font-size: rem-calc(36);
+	@include breakpoint('medium') {
+		font-size: rem-calc(64);
+	}
+}
+.H1 {
+	@extend %mainHeadings;
+	font-size: rem-calc(36);
+	@include breakpoint('medium') {
+		font-size: rem-calc(48);
+	}
+}
+.H2 {
+	@extend %mainHeadings;
+	font-size: rem-calc(24);
+	@include breakpoint('medium') {
+		font-size: rem-calc(36);
+	}
+}
+.H3 {
+	@extend %mainHeadings;
+	font-size: rem-calc(24);
+}
+.H4 {
+	@extend %mainHeadings;
+	font-size: rem-calc(18);
+}
+.H5 {
+	@extend %mainHeadings;
+	font-size: rem-calc(14);
+}
+.H6 {
+	@extend %mainHeadings;
+	font-size: rem-calc(12);
+}

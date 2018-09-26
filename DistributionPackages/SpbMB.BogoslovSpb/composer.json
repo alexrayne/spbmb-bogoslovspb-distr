@@ -23,7 +23,8 @@
         "sitegeist/silhouettes" : "^1.0",
 
         "neos/nodetypes-contentreferences": "*",
-        "psmb/nodetypes": "*"
+        "psmb/nodetypes": "*",
+        "sfi/grid": "*"
     },
     "require-dev": {
         "ttree/eelshell": "@dev",

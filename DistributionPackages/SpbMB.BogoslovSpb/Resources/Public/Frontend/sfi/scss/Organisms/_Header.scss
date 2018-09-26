@@ -1,0 +1,37 @@
+.Header {
+	margin-bottom: 4*$u;
+	@include breakpoint('medium') {
+		margin-bottom: 6*$u;
+	}
+	@include breakpoint('large') {
+		margin-bottom: 8*$u;
+	}
+}
+#page-sfi .Header{
+	margin-bottom: 0;
+}
+
+.Header-Wrap{
+	position: relative;
+	overflow: auto;
+}
+
+.Header-Menu{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.HeaderSmall-Bar {
+	border-bottom: 1px solid $gray-line;
+}
+
+.hack-HeaderPetit {
+	@extend .ParagraphAlt;
+	@include link-state();
+	line-height: $lineHeight-tight !important;
+	font-size: rem-calc(13);
+	@include breakpoint(710px) {
+		font-size: rem-calc(14);
+	}
+}

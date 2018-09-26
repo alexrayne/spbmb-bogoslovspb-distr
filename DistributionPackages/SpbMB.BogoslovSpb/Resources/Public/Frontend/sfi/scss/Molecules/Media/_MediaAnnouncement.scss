@@ -1,0 +1,43 @@
+.MediaAnnouncement {
+	clear: both;
+	overflow: auto;
+	margin-bottom: 2*$u;
+}
+.MediaAnnouncement:hover .MediaAnnouncement-Title {
+	color: $color-primary;
+	text-decoration: underline;
+}
+.MediaAnnouncement-DateDay, .MediaAnnouncement-DateMonth {
+	@extend .H3;
+	font-size: rem-calc(30);
+	color: $color-primary;
+	margin: 0;
+}
+.MediaAnnouncement-DateTime {
+	@extend .H3;
+	font-size: rem-calc(30);
+	color: $gray--light;
+	font-weight: normal;
+	padding-left: $u/2;
+	margin: 0;
+}
+.MediaAnnouncement-Title {
+	@extend .H3;
+	border-bottom: 1px solid $gray-line;
+	padding-bottom: $u/4;
+	margin-bottom: $u/4;
+}
+.MediaAnnouncement-Teaser {
+	@extend .ParagraphAlt;
+	margin-bottom: 0;
+}
+.MediaAnnouncement-Place {
+	@extend .ParagraphAlt;
+	color: $gray--light;
+	margin-top: 0;
+}
+.Announcement-Place {
+	@extend .ParagraphAlt--Large;
+	color: $gray--light;
+	line-height: $lineHeight-tight;
+}

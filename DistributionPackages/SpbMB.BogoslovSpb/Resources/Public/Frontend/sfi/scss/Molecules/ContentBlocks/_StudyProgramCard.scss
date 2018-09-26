@@ -1,0 +1,31 @@
+.StudyProgramCard {
+	background-color: $gray-bg--light;
+	padding: $u;
+	@include breakpoint('medium') {
+		padding: 2*$u;
+	}
+}
+
+.Sections-Panel .StudyProgramCard {
+	background-color: initial;
+}
+
+.StudyProgramCard-Line {
+	@extend .ParagraphAlt--Large;
+	color: $gray--light;
+	b, strong {
+		color: $color-primaryAlt;
+		text-transform: uppercase;
+	}
+	.ButtonInline {
+		margin: 0 !important;
+	}
+}
+
+.StudyProgramCard--Short {
+	padding: 0;
+	@include breakpoint('medium') {
+		padding: 0 2*$u;
+	}
+}
+

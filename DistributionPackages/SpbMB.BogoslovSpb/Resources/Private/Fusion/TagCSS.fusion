@@ -1,0 +1,10 @@
+prototype(SpbMB.BogoslovSpb:Document.TagCSS) < prototype(Neos.Fusion:Tag) {
+	tagName = 'link'
+	@context.csspath = ${this.csspath}
+	attributes { 
+		rel='stylesheet'
+		href = Neos.Fusion:ResourceUri { 
+			path = ${csspath}  
+		} 
+	}
+}

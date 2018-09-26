@@ -1,0 +1,25 @@
+.BreadcrumbMenu{
+	position: absolute;
+	margin: $u/2 0;
+	@include breakpoint('large') {
+		margin: $u 0;
+	}
+	li{
+		@extend .ParagraphAlt--Small;
+		float: left;
+		margin: 0;
+		margin-right: $u;
+		@include link-state();
+	}
+	li:last-child:after{
+		content: '';
+	}
+	li:after{
+		content: '»';
+		display: inline-block;
+		position: relative;
+		left: $u/4;
+		width: 7px;
+		margin-right: -7px;
+	}
+}

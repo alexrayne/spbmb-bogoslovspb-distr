@@ -1,0 +1,18 @@
+.SubSectionLayout-Header {
+	border-bottom: $border-thin;
+	margin-bottom: 3*$u;
+	@include breakpoint('medium') {
+		margin-bottom: 4*$u;
+	}
+	@include breakpoint('large') {
+		margin-bottom: 6*$u;
+	}
+}
+
+.SubSectionLayout-SubTitle {
+	@extend .ParagraphAlt;
+}
+.SubSectionLayout-SubPageTitle {
+	@extend .H2;
+	margin-bottom: 2*$u;
+}

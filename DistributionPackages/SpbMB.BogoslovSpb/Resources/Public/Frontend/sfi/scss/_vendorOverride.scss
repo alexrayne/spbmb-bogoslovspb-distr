@@ -1,0 +1,79 @@
+.audiojs p{
+	margin: 0 !important;
+}
+
+body {
+	.slick-dots{
+		// lucky number :(
+		width: initial;
+		display: inline-block;
+		margin-top: 0;
+		margin-left: 7px;
+		margin-right: 12px;
+		top: $u;
+		left: $u;
+		right: $u;
+		bottom: auto;
+		li {
+			margin: 0;
+		}
+		li button:before{
+			font-size: 8px;
+			opacity: 1;
+			color: $gray-line;
+		}
+		li.slick-active button:before{
+			opacity: 1;
+			color: $color-primary;
+		}
+	}
+	.slick-prev, .slick-next{
+		top: 49%;
+		margin-top: 0;
+		width: 48px;
+		height: 48px;
+		&:before{
+			color: $color-primary;
+			opacity: 1;
+		}
+	}
+	.NewsTop {
+		@include breakpoint(small only) {
+			.slick-prev, .slick-next{
+				top: 28%;
+			}
+			.slick-track {
+				background-color: black;
+			}
+		}
+	}
+	.slick-prev{
+		left: 0;
+	}
+	.slick-next{
+		right: 6px;
+	}
+	.slick-list .Figure{
+		margin: 0;
+	}
+	h1 {
+	    @extend %mainHeadings;
+	    font-size: 1.25em;
+	    @include breakpoint('medium') {
+	        font-size: 1.5em;
+	    }
+	}
+	h2 {
+        @extend %mainHeadings;
+        font-size: 1.125em;
+        @include breakpoint('medium') {
+            font-size: 1.5em;
+        }
+	}
+	h3 {
+        @extend %mainHeadings;
+        @include breakpoint('medium') {
+            font-size: 1.125em;
+        }
+	}
+}

@@ -5,8 +5,7 @@ prototype(SpbMB.BogoslovSpb:Component.Header) < prototype(Neos.Fusion:Component)
 
 	renderer = afx`
 		<header class="codeq-site-header">
-			<a class="codeq-site-logo" href={props.homeLink}>BRAND NAME</a>
-			<SpbMB.BogoslovSpb:Component.Navigation />
+			<a class="codeq-site-logo" href={props.homeLink}>БогословСПб.ру</a>
 		</header>
 	`
 }

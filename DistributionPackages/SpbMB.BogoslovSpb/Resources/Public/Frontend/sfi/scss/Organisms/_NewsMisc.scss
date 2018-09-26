@@ -1,0 +1,18 @@
+// TODO: Main page offset, move away from here
+.NewsLatest {
+	background: white;
+}
+
+.NewsLatest-Grid {
+}
+
+.NewsList-Grid {
+	margin: 2*$u 0;
+	overflow: auto;
+}
+
+.News-MoreButton {
+	margin: $u 0;
+	padding: $u/2 $u;
+	background: white;
+}

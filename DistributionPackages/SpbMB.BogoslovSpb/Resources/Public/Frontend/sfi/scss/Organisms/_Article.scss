@@ -1,0 +1,86 @@
+.Article-Date {
+	text-transform: lowercase;
+}
+
+.Article-Date, .Article-Place, .Article-CommentCount {
+	@extend .ServiceEm;
+	margin-bottom: 0;
+}
+
+.Article-CommentCount {
+	color: $color-primaryAlt;
+}
+
+.Article-AuthorLabel {
+	@extend .ServiceEm;
+	padding-right: $u/2;
+}
+.Article-AuthorName {
+	@extend .Service--Small;
+	margin-right: 2*$u;
+}
+
+.Article-Bar {
+	margin-bottom: $u;
+}
+
+.Article-Lead a {
+	@extend .Link;
+}
+
+.Article--Soft {
+	.Article-Title {
+		@extend .PageTitle;
+		text-align: center;
+	}
+	.Article-Teaser {
+		@extend .Paragraph--Large;
+		text-align: center;
+	}
+	.Article-Lead {
+		@extend .Lead;
+	}
+}
+
+.Article--Hard {
+	.Article-Title {
+		@extend .PageTitle--Small;
+		margin-bottom: $u;
+	}
+	.Article-Teaser {
+		@extend .ParagraphAlt--Large;
+		margin-bottom: $u/2;
+	}
+	.Article-Lead {
+		@extend .Paragraph;
+		margin-bottom: $u;
+	}
+}
+
+
+
+
+
+
+// TODO: refactor this
+@include breakpoint(medium only) {
+	.NewsDetail-MoreItems {
+		.MediaSmall-Image {
+			display: none;
+		}
+		.MediaSmall-Body {
+			margin-left: 0;
+		}
+	}
+}
+
+
+@include breakpoint(780px) {
+	.NewsDetail-Article--Hard {
+		@include grid-column(7);
+	}
+	.NewsDetail-MoreItems {
+		@include grid-column(4, 1);
+		@include grid-column($columns:4, $offset:1);
+	}
+}

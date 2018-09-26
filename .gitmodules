@@ -1,3 +1,6 @@
 [submodule "sfigrid"]
 	path = Packages/Application/Sfi.Grid
 	url = git@github.com:alexrayne/Sfi.Grid.git
+[submodule "psmbterm"]
+	path = Packages/Application/Psmb.Term
+	url = git@github.com:psmb/Psmb.Term.git

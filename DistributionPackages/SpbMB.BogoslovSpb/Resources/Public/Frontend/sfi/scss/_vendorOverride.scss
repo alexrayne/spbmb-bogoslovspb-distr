@@ -56,24 +56,4 @@ body {
 	.slick-list .Figure{
 		margin: 0;
 	}
-	h1 {
-	    @extend %mainHeadings;
-	    font-size: 1.25em;
-	    @include breakpoint('medium') {
-	        font-size: 1.5em;
-	    }
-	}
-	h2 {
-        @extend %mainHeadings;
-        font-size: 1.125em;
-        @include breakpoint('medium') {
-            font-size: 1.5em;
-        }
-	}
-	h3 {
-        @extend %mainHeadings;
-        @include breakpoint('medium') {
-            font-size: 1.125em;
-        }
-	}
 }

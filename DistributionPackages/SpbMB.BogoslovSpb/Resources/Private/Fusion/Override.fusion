@@ -1,3 +1,44 @@
 ###
 ## Add your overrides to 3rd party fusion code here
 ###
+prototype(Psmb.NodeTypes:Text) {
+    attributes.class = 'Text rte-text'
+  content.@process.replaceTags = Psmb.Term:ReplaceTerms
+}
+prototype(Psmb.NodeTypes:Headline) {
+    attributes.class = 'Headline rte-text'
+}
+prototype(Psmb.NodeTypes:Lead) {
+    attributes.class = 'Lead rte-text'
+}
+prototype(Psmb.NodeTypes:Blockquote) {
+    attributes.class = 'blockquote rte-text'
+}
+prototype(Psmb.NodeTypes:Section) {
+    attributes.class = 'Section rte-text'
+}
+prototype(Psmb.NodeTypes:Aside) {
+    attributes.class = 'Aside rte-text'
+}
+prototype(Psmb.NodeTypes:Small) {
+    attributes.class = 'Small rte-text'
+}
+prototype(Psmb.NodeTypes:Epigraph) {
+  attributes.class = 'Epigraph rte-text small-12 medium-8 medium-offset-4'
+}
+prototype(Psmb.NodeTypes:Button) {
+    attributes.class = 'button button--alt'
+}
+prototype(Psmb.NodeTypes:Image) {
+    attributes.class = 'figure'
+    content.caption.attributes.class = 'figure__caption'
+}
+
+prototype(Neos.Fusion:Collection) {
+    itemName = 'node'
+}
+prototype(Neos.Fusion:GlobalCacheIdentifiers) {
+    site = ${site}
+}
+
+prototype(Neos.Neos:Page).googleAnalyticsTrackingCode >

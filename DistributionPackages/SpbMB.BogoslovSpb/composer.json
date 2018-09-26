@@ -24,6 +24,7 @@
 
         "neos/nodetypes-contentreferences": "*",
         "psmb/nodetypes": "*",
+        "psmb/term": "*",
         "sfi/grid": "*"
     },
     "require-dev": {
